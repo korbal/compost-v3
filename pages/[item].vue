@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-// item must match the [].vue page name here
+// item must match the [].vue page name here.
   const { item } = useRoute().params
 
 </script>
