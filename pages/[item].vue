@@ -1,6 +1,7 @@
 <template>
   <div>
     <p>item details for {{ item }}</p>
+    fasz
   </div>
 </template>
 
