@@ -1,12 +1,12 @@
 <template>
   <div>
     <p>item details for {{ item }}</p>
-    fasz
+    fasz.
   </div>
 </template>
 
 <script setup>
-// item must match the [].vue page name here.
+// item must match the [].vue page name here
   const { item } = useRoute().params
 
 </script>
