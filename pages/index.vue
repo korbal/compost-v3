@@ -3,7 +3,7 @@
     
    
     
-    home.
+    home. api works
 
   </div>
 </template>
