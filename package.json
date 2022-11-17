@@ -9,6 +9,7 @@
     "deploy": "npm run generate && git add . && git commit -m 'fasz' && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.1.3",
     "nuxt": "3.0.0",
     "push-dir": "^0.4.1"
   }

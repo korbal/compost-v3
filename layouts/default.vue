@@ -1,21 +1,24 @@
 <template>
   <div>
 
-    <header>
-      <nav>
+    <header class="shadow-sm bg-white">
+      <nav class="container mx-auto p-4 flex justify-between">
       <NuxtLink to="/">Can I Compost it?</NuxtLink>
-        <ul>
+        <ul class="flex gap-4">
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/about">About</NuxtLink></li>
-          <li><NuxtLink to="/items">Items</NuxtLink></li>
+          <li><NuxtLink to="/items" class="btn">Items</NuxtLink></li>
 
         </ul>
       </nav>
     </header>
 
 <!-- output page component -->
-    <slot />
-
+    
+    <div class="container mx-auto p-4">
+      <slot />
+    </div>
+    
   </div>
 </template>
 
