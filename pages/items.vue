@@ -3,7 +3,7 @@
     
    
     
-    about page
+  this is the items page which will be the sitemap
 
   </div>
 </template>
