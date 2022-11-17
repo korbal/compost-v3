@@ -3,7 +3,7 @@
     
    
     
-    home
+    home.
 
   </div>
 </template>
