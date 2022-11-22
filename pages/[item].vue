@@ -11,7 +11,7 @@
 
 // const {item } = defineProps(['item']);
 
-//adding the itemdetails.vue layout to these pages
+//adding the itemdetails.vue layout to these pages.
 
 const {item} = useRoute().params;
 
