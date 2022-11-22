@@ -1,17 +1,10 @@
 <template>
   <div>
-    
-    home. ez alá írtam
-
-    <Search />
-
-
+suggest page
   </div>
 </template>
 
-<script setup>
-
-
+<script setup lang="ts">
 
 </script>
 

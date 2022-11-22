@@ -1,20 +1,13 @@
 <template>
   <div>
-    
-    home. ez alá írtam
-
-    <Search />
-
 
   </div>
 </template>
 
 <script setup>
 
-
-
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

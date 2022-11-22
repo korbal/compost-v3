@@ -1,17 +1,14 @@
 <template>
   <div>
-    
-    home. ez alá írtam
+    gecisfasz 
 
-    <Search />
-
-
+    {{ $attrs.description }}
   </div>
 </template>
 
 <script setup>
 
-
+const { item } = defineProps(['item']);
 
 </script>
 
