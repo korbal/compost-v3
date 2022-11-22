@@ -6,7 +6,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "npm run generate && git add . && git commit -m 'fasz' && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "git add . && git commit -m 'fasz' && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.1.3",
