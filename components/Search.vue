@@ -80,7 +80,7 @@ body {
 input {
   display: block;
   width: 350px;
-  margin: 20px;
+  margin: autopx;
   padding: 10px 45px;
   background: white url("../assets/search-icon.svg") no-repeat 15px center;
   background-size: 15px 15px;
@@ -93,7 +93,7 @@ input {
 
 .item-bg {
   width: 350px;
-  margin: 0 5px 5px 0px;
+  margin: 0 50px 5px 0px;
   padding: 10px 20px;
   color: white;
   border-radius: 5px;
