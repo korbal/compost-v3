@@ -1,9 +1,7 @@
 <template>
   <div>
     
-    home. ez alá írtam
-
-    <Search />
+  <Search />
 
 
   </div>
