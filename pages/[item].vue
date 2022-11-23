@@ -2,6 +2,7 @@
   <div>
     <NuxtLink to="/">back to home</NuxtLink>
   {{ myObj.description }}
+  {{geci}}
  </div>
 </template>
 
@@ -24,13 +25,15 @@ const itemz = useNuxtApp().payload.data['items'];
 const myArray = itemz.items;
 
 const myObj = myArray.find((myObj) => myObj.path === item);
-console.log(myObj);
+
 
 
 
 definePageMeta({
   layout: 'itemdetails'
 })
+
+
 
 </script>
 
