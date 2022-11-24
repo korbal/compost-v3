@@ -6,11 +6,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-<<<<<<< HEAD
     "deploy": "npm run generate && git add . && git commit -m 'deployv4' && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
-=======
-    "deploy": "npm run generate && git add . && git commit -m 'generate and deploy' && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
->>>>>>> parent of 5c4eedd ('deploy')
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.1.3",
