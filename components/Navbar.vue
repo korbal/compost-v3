@@ -2,7 +2,7 @@
   <div>
 
     <header class="shadow-sm bg-white">
-      <nav class="container mx-auto p-4 flex justify-between">
+      <nav class="container mx-auto py-4 flex justify-between max-w-2xl">
       <!-- <NuxtLink to="/">Can I Compost it?</NuxtLink> -->
       <NuxtLink to="/">
       <div>

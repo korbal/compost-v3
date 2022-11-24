@@ -1,6 +1,7 @@
 <template>
   <div>
-    <NuxtLink to="/">back to home</NuxtLink>
+    <h1>Item Details</h1>
+    <p>{{ item }}</p>
   {{ myObj.description }}
   {{geci}}
  </div>

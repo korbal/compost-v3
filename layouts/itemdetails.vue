@@ -1,19 +1,13 @@
 <template>
-  <div>
-
-    <header class="shadow-sm bg-white">
-      <nav class="container mx-auto p-4">
-      <NuxtLink to="/items">Go back to Items (sitemap page)</NuxtLink>
-        
-      </nav>
-    </header>
+  <div >
+<Navbar />
 
 <!-- output page component -->
-   <div class="container mx-auto p-4">
+   <div class="container mx-auto px-10 py-4 max-w-xl">
     <slot />
    </div>
    
-    <footer class="container mx-auto p-4 flex justify-between border-t-2">
+    <footer class="container mx-auto px-10 py-4 flex justify-around border-t-2 w-fit">
       <ul class="flex gap-4">
           <li><NuxtLink to="/">Home</NuxtLink></li>
           <li><NuxtLink to="/about">About</NuxtLink></li>
