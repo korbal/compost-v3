@@ -8,7 +8,11 @@
   </div>
 
   <div class="tagline">
+<<<<<<< HEAD
     The fastest way to find out if you can throw something in your home composting bin. It is a work in progress, and we welcome your feedback and contributions. <NuxtLink to="/about"> Learn more</NuxtLink> V6
+=======
+    The fastest way to find out if you can throw something in your home composting bin. It is a work in progress, and we welcome your feedback and contributions. <NuxtLink to="/about"> Learn more</NuxtLink> V3
+>>>>>>> parent of 2fe9661 (this is the new v4, reverting from here back)
   </div>
   
 
