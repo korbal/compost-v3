@@ -1,7 +1,9 @@
 <template>
   <div>
-    <h1>Item Details</h1>
-    <p>{{ item }}</p>
+    
+    <h2 class="answer text-lg"> {{myObj.isCompostable}}</h2>
+    
+    
   {{ myObj.description }}
   {{geci}}
  </div>
