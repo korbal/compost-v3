@@ -13,13 +13,13 @@
   
     <!-- Category and reference block -->
     <!-- category -->
-    <div class="relative flex w-full justify-between mt-3 text-gray-400 text-sm">
+    <div class="relative flex w-full justify-between mt-3 text-gray-400 text-sm category ">
       <p>
         <div class="group relative inline-block  hover:text-red-500 duration-300">
-            Category:
+            <span class="dotted-underline">Category:</span>
             <!-- Tooltip text here -->
             <span
-                class="absolute hidden group-hover:flex -left-5 -top-2 -translate-y-full w-48 px-2 py-1 bg-gray-700 rounded-lg text-center text-white text-sm after:content-[''] after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2 after:border-8 after:border-x-transparent after:border-b-transparent after:border-t-gray-700">You have to have a good balance of green and brown compostables. Learn more here.</span>
+                class=" absolute hidden group-hover:flex -left-5 -top-2 -translate-y-full w-48 px-2 py-1 bg-gray-700 rounded-lg text-center text-white text-sm after:content-[''] after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2 after:border-8 after:border-x-transparent after:border-b-transparent after:border-t-gray-700">You have to have a good balance of green and brown compostables. Learn more here.</span>
         </div>
         
           <span v-if="`${myObj.category}`==='green'" class="bg-green-400 text-white rounded-xl ml-1 px-2 pb-1">{{myObj.category}}</span>
@@ -34,7 +34,7 @@
 
       <!-- category end -->
 
-        <div><NuxtLink :to="`${myObj.reference}`" target="_blank">Reference</NuxtLink></div>
+        <div><NuxtLink :to="`${myObj.reference}`" target="_blank" class="dotted-underline">Reference</NuxtLink></div>
     </div>
     <!-- Category and reference block end -->
 
@@ -46,6 +46,7 @@
 <script setup>
 let items = [];
 const {item} = useRoute().params;
+
 
 
 
@@ -79,4 +80,9 @@ definePageMeta({
 .brown {
   background-color: #5E2F00;
 }
+
+.dotted-underline {
+  border-bottom: 1px dotted #333;
+}
+
 </style>

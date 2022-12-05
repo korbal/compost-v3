@@ -29,14 +29,15 @@
   >
 
   <div class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden shadow px-10">
-  
+<!--   
   <NuxtLink :to="`${data.items[`${item.id}`-1].path}`" >
         <p>{{ item.name }}</p>
-  </NuxtLink>
+  </NuxtLink> -->
 
-  <!-- <NuxtLink :to="{name: 'item', props: {item: item}}">
+
+  <NuxtLink :to="`${items[`${item.id}`-1].path}`" >
         <p>{{ item.name }}</p>
-  </NuxtLink>  -->
+  </NuxtLink>
 
   </div>  
     
@@ -66,28 +67,28 @@ let items = [];
 
 
 
-const { data } = await useAsyncData('items', () =>
-  $fetch(
-    'https://script.google.com/macros/s/AKfycbylLKlTRlulUb0x9r9j2Wvxa5W64g49NOT9kOsXR-N6LiPRamqA/exec'
-  )
-);
-items = data._value.items;
+// const { data } = await useAsyncData('items', () =>
+//   $fetch(
+//     'https://script.google.com/macros/s/AKfycbylLKlTRlulUb0x9r9j2Wvxa5W64g49NOT9kOsXR-N6LiPRamqA/exec'
+//   )
+// );
+// items = data._value.items;
 
 
-// onBeforeMount(() =>{
-//   getData();
-// })
+onBeforeMount(() =>{
+  getData();
+})
 
-// async function getData(){
-//   const res = await fetch('https://script.google.com/macros/s/AKfycbylLKlTRlulUb0x9r9j2Wvxa5W64g49NOT9kOsXR-N6LiPRamqA/exec');
+async function getData(){
+  const res = await fetch('https://script.google.com/macros/s/AKfycbylLKlTRlulUb0x9r9j2Wvxa5W64g49NOT9kOsXR-N6LiPRamqA/exec');
 
-//   const json = await res.json();
+  const json = await res.json();
   
-//   for (const element of json.items){
-//     items.push(element);
-//   }
-//   console.log(items)
-// }
+  for (const element of json.items){
+    items.push(element);
+  }
+  console.log(items)
+}
 
 
 
