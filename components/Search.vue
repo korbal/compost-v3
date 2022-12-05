@@ -1,4 +1,5 @@
 <template>
+ <!-- fuck you -->
   <div>
   <div class="content">
     <div class="max-w-md mx-auto">
