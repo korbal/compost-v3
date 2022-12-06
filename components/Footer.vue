@@ -6,6 +6,7 @@
           <li><NuxtLink to="/" active-class="active">Home</NuxtLink></li>
           <li><NuxtLink to="/about" active-class="active">About</NuxtLink></li>
           <li><NuxtLink to="/items" active-class="active">All Items</NuxtLink></li>
+          
       </ul>
 
      

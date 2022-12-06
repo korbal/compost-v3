@@ -64,11 +64,18 @@ const { data } = await useAsyncData('items', () =>
 
 items = data._value.items;
 
+if(!items.description){
+  throw createError({
+    statusCode: 404,
+    message: 'This item does not exist', fatal: true
+  })
+}
 
 const itemz = useNuxtApp().payload.data['items'];
 const myArray = itemz.items;
 
 const myObj = myArray.find((myObj) => myObj.path === item);
+
 
 
 
