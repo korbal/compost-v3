@@ -51,14 +51,14 @@
   </div>
   <div
     v-if="input &&!filteredList().length"
-    class="item-bg error"
-  >
+    class="item-bg error relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden shadow item-class item-bg rounded-lg w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline drop-shadow-lg mb-1 mt-1">
 
-
-    <NuxtLink :to="`/suggest`" :item="input">   
-      <p>No results found! Tap to suggest...</p>
-    </NuxtLink>
-
+      <div class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-red-300 overflow-hidden shadow px-10 ">
+        <NuxtLink :to="`/suggest`" :item="input" class="" >   
+          <p>No results found! Tap to suggest...</p>
+        </NuxtLink>
+      </div>
+    
     
     </div>
   </div>
