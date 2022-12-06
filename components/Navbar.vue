@@ -13,7 +13,7 @@
 
         <ul class="flex gap-4 pr-4">
           
-          <li><NuxtLink to="/about">About</NuxtLink></li>
+          <!-- <li><NuxtLink to="/about">About</NuxtLink></li> -->
           
 
         </ul>

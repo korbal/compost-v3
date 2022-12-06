@@ -1,5 +1,5 @@
 <template>
- <!-- fuck you -->
+ 
   <div>
   <div class="content">
     <div class="max-w-md mx-auto">
@@ -20,6 +20,7 @@
      autofocus
    />
   </div>
+  
   <div
     
     v-show="input.length !=0"
@@ -30,10 +31,16 @@
   >
 
   <div class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden shadow px-10">
-  
+    
   <NuxtLink :to="`${data.items[`${item.id}`-1].path}`" >
         <p>{{ item.name }}</p>
   </NuxtLink>
+
+  
+
+<!--<NuxtLink :to="`${data.items[`${item.id}`-1].path}`" >
+        <p>{{ item.name }}</p>
+  </NuxtLink> -->
 
   <!-- <NuxtLink :to="{name: 'item', props: {item: item}}">
         <p>{{ item.name }}</p>
@@ -129,6 +136,10 @@ item-class {
   padding: 05.rem;
   transition: all 0.2s ease-in-out;
   
+}
+
+p{
+  margin-bottom: 0;
 }
 
 </style>

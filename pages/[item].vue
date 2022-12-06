@@ -34,7 +34,7 @@
 
       <!-- category end -->
 
-        <div><NuxtLink :to="`${myObj.reference}`" target="_blank" class="dotted-underline">Reference</NuxtLink></div>
+        <p><div><NuxtLink :to="`${myObj.reference}`" target="_blank" class="dotted-underline">Reference</NuxtLink></div></p>
     </div>
     <!-- Category and reference block end -->
 
@@ -81,8 +81,8 @@ definePageMeta({
   background-color: #5E2F00;
 }
 
-.dotted-underline {
-  border-bottom: 1px dotted #333;
-}
+
+
+
 
 </style>

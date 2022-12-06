@@ -3,6 +3,8 @@ export default defineNuxtConfig({
   target: 'static',
   //ssr: true,
 
-  modules: ['@nuxtjs/tailwindcss']
+  modules: ['@nuxtjs/tailwindcss'],
   //experimental.payloadExtraction = false
+  css: ['~/assets/css/main.css'],
+  // generate: { routes: ['/items'] },
 })
