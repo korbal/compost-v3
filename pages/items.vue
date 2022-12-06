@@ -10,7 +10,7 @@
   <div>
     <div class="overflow-y-auto max-w-md mx-auto">
       <h3 class="text-xl text-center">
-        All the items in the database (current number: {{ items.items.length }})
+        All the items in the database <br> (current number: {{ items.items.length }})
       </h3>
       <div
         v-for="item in items.items"

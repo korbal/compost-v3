@@ -1,4 +1,10 @@
 <template>
+
+  <Head>
+    <Title>Can I put {{ myObj.name }} in the compost bin?</Title>
+    <Meta name="description" :content="myObj.description.split('.').slice(0,1).join('.') + '. >> Tap here to find out more!'" />
+  </Head>
+
   <div>
     
     <!-- Whether it's compostable -->
@@ -70,6 +76,8 @@ const myObj = myArray.find((myObj) => myObj.path === item);
 definePageMeta({
   layout: 'itemdetails'
 })
+
+
 
 
 
