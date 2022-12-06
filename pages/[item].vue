@@ -64,12 +64,14 @@ const { data } = await useAsyncData('items', () =>
 
 items = data._value.items;
 
-if(!items.description){
-  throw createError({
-    statusCode: 404,
-    message: 'This item does not exist', fatal: true
-  })
-}
+//TODO: fix error handling. can't generate static pages.
+
+// if(!data.description){
+//   throw createError({
+//     statusCode: 404,
+//     message: 'This item does not exist'
+//   })
+// }
 
 const itemz = useNuxtApp().payload.data['items'];
 const myArray = itemz.items;
