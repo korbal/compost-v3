@@ -9,20 +9,32 @@
     
     <!-- Whether it's compostable -->
     <h2 class="answer text-4xl text-center"> {{myObj.isCompostable}}</h2>
+    <br>
     
     <!-- Subheading -->
-    <h3 class="text-xl text-center">You can put <span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
-    
+    <h3 v-if="myObj.isCompostable === 'YES 🎉'" class="text-xl text-center">You can put <span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
+
+    <h3 v-else-if="myObj.isCompostable === 'NO ✋🏼'" class="text-xl text-center">You can't put <span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
+
+    <h3 v-else class="text-xl text-center">You probably shouldn't put<span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
+<!--     
+    <h3 v-if="myObj.isCompostable === 'YES 🎉'">You can put</h3>
+    <h3 v-else-if="myObj.isCompostable === 'NO ✋🏼'">You can't put</h3>
+    <h3 v-else>You probably can't put</h3>
+
+    {{myObj.name}} into your composting bin!
+     -->
     <!-- Description of the item -->
     <br>
-    <p class="text-gray-700">{{ myObj.description }}</p>
+    <!-- <p class="text-gray-700">{{ myObj.description }}</p> -->
+    <div v-html="myObj.description"></div>
   
     <!-- Category and reference block -->
     <!-- category -->
     <div class="relative flex w-full justify-between mt-3 text-gray-400 text-sm category ">
       <p>
         <div class="group relative inline-block  hover:text-red-500 duration-300">
-            <span class="dotted-underline">Category:</span>
+            <span class="dotted-underline catref">Category:</span>
             <!-- Tooltip text here -->
             <span
                 class=" absolute hidden group-hover:flex -left-5 -top-2 -translate-y-full w-48 px-2 py-1 bg-gray-700 rounded-lg text-center text-white text-sm after:content-[''] after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2 after:border-8 after:border-x-transparent after:border-b-transparent after:border-t-gray-700">You have to have a good balance of green and brown compostables. Learn more here.</span>
@@ -39,8 +51,8 @@
        
 
       <!-- category end -->
-
-        <p><div><NuxtLink :to="`${myObj.reference}`" target="_blank" class="dotted-underline">Reference</NuxtLink></div></p>
+      <!-- only show reference link if there is one in the DB -->
+        <p><div><NuxtLink v-if="myObj.reference" :to="`${myObj.reference}`" target="_blank" class="dotted-underline catref">Reference</NuxtLink></div></p>
     </div>
     <!-- Category and reference block end -->
 
@@ -98,7 +110,9 @@ definePageMeta({
   background-color: #5E2F00;
 }
 
-
+.catref {
+  font-size: 1rem;
+}
 
 
 

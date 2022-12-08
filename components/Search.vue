@@ -15,9 +15,9 @@
      v-on:keydown="search"
      @input="input = $event.target.value"
      placeholder="start typing to find out..."
-     type="text"
-     class="rounded w-full py-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
-     autofocus
+     type="search"
+     class="rounded w-full py-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline " 
+     autofocus autocomplete="off"
    />
   </div>
   
@@ -141,5 +141,12 @@ item-class {
 p{
   margin-bottom: 0;
 }
+
+
+input:focus {
+  outline: none;
+  
+}
+
 
 </style>

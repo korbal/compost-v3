@@ -2,15 +2,18 @@
   <div>
     
   <Search />
-
+  
   <div>
     <img src="../assets/img/home-composting-bin.png" alt="A home composting bin">
   </div>
-
+  
   <div class="tagline">
-
+  
+  
     The fastest way to find out if you can throw something in your <i>home composting bin</i>. It is a work in progress, and your feedback and contributions are welcome. <NuxtLink to="/about"><span class="dotted-underline">Learn more.</span></NuxtLink> <br>v3.1
+    
   </div>
+  
   
 
 
