@@ -27,7 +27,7 @@ useHead({
   script: [
     { src: 'https://platform-api.sharethis.com/js/sharethis.js#property=6391f7a98fb8b6001abbbcce&product=sop', 
     'type': 'text/javascript',
-    'async': async },
+    'async': true },
   ],
   script: [
     { 'src': 'https://t.usermaven.com/lib.js',
