@@ -26,23 +26,23 @@
 useHead({
   script: [
     { src: 'https://platform-api.sharethis.com/js/sharethis.js#property=6391f7a98fb8b6001abbbcce&product=sop', 
-    type: 'text/javascript',
-    async: true },
+    'type': 'text/javascript',
+    'async': async },
   ],
   script: [
     { 'src': 'https://t.usermaven.com/lib.js',
     'data-key':"UMvfbf6vg2" ,
     'data-tracking-host': 'https://events.usermaven.com',
     'data-autocapture': 'true',
-    defer: true,
-    innerHTML:`window.usermaven = window.usermaven || (function(){(window.usermavenQ = window.usermavenQ || []).push(arguments);})
+    'defer': true,
+    'innerHTML':`window.usermaven = window.usermaven || (function(){(window.usermavenQ = window.usermavenQ || []).push(arguments);})
     
     `},
   ],
   script: [
     { 'src': 'https://www.googletagmanager.com/gtag/js?id=UA-3450053-63',
     async: true,
-    innerHTML:`window.dataLayer = window.dataLayer || [];
+    'innerHTML':`window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
