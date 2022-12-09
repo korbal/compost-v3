@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss'],
   //experimental.payloadExtraction = false
   css: ['~/assets/css/main.css'],
+
   app: {
     head: {
       title: 'Can I Compost it?',
