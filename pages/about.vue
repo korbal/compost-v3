@@ -15,8 +15,17 @@
 
         <p>The app is still in development, so if you have any suggestions or find any bugs, please <a href="mailto:korosibalint@yahoo.co.uk?subject=canicompostit.com">let me know in email</a> or <a href="https://twitter.com/korosibalint">@korosibalint on Twitter</a></p>
 
-        <p>Thank you for using canicompostit.com! Together, we can make a positive impact on the world. Tell your friends and family about it and encourage them to use it too. The more people use the app, the more we can all help the environment by reducing waste and making more eco-friendly choices. </p>  
-       <p>Thank you for your support!</p>
+        <p>Thank you for using canicompostit.com! Together, we can make a positive impact on the world. </p>
+        
+        <p>Tell your friends and family about it and encourage them to use it too. The more people use the app, the more we can all help the environment by reducing waste and making more eco-friendly choices.</p>  
+       
+       <p>If you want to help me you can do the following:</p>
+       <ul>
+       <li>- Share CanICompostIt.com on social media.</li>
+       <li>- Tell your friends and family about it.</li>
+       <li>- If you have a website, consider adding a link to canicompostit.com</li>
+       </ul>
+       <p>Thank you for your support!</p> 
        <p>Balint</p>
 
 

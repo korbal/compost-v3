@@ -16,7 +16,7 @@
 
     <h3 v-else-if="myObj.isCompostable === 'NO ✋🏼'" class="text-xl text-center">You can't put <span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
 
-    <h3 v-else class="text-xl text-center">You probably shouldn't put<span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
+    <h3 v-else class="text-xl text-center">You probably shouldn't put <span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
 <!--     
     <h3 v-if="myObj.isCompostable === 'YES 🎉'">You can put</h3>
     <h3 v-else-if="myObj.isCompostable === 'NO ✋🏼'">You can't put</h3>
@@ -37,7 +37,7 @@
             <span class="dotted-underline catref">Category:</span>
             <!-- Tooltip text here -->
             <span
-                class=" absolute hidden group-hover:flex -left-5 -top-2 -translate-y-full w-48 px-2 py-1 bg-gray-700 rounded-lg text-center text-white text-sm after:content-[''] after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2 after:border-8 after:border-x-transparent after:border-b-transparent after:border-t-gray-700">You have to have a good balance of green and brown compostables. Learn more here.</span>
+                class=" absolute hidden group-hover:flex -left-5 -top-2 -translate-y-full w-48 px-2 py-1 bg-gray-700 rounded-lg text-center text-white text-sm after:content-[''] after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2 after:border-8 after:border-x-transparent after:border-b-transparent after:border-t-gray-700">Easiest to go for a 50%-50% ratio in volume. It's not perfect, but simple to manage.</span>
         </div>
         
           <span v-if="`${myObj.category}`==='green'" class="bg-green-400 text-white rounded-xl ml-1 px-2 pb-1">{{myObj.category}}</span>
