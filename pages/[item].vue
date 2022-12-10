@@ -62,6 +62,9 @@
 </template>
 
 <script setup>
+
+
+
 let items = [];
 const {item} = useRoute().params;
 

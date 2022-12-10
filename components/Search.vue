@@ -23,9 +23,10 @@
   
   <div
     
-    v-show="input.length !=0"
+    v-show="(input.length !=0)"
     v-for="item in filteredList()"
     :key="item.id"
+    
     class="item-class item-bg rounded-lg w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline drop-shadow-lg mb-1 mt-1"
     @click="input = ''"
   >

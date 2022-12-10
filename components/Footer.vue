@@ -21,14 +21,21 @@
 
 <script setup>
 
-// https://platform-api.sharethis.com/js/sharethis.js#property=6391df314c319700156560eb&product=inline-share-buttons&source=platform ez volt a régi script src a sharethishez.
+// onBeforeRouteUpdate(async (to, from, next) => {
+  
+//   console.log('faszjs geci fire')
+  
+//   // await next()
+//   // window.location.reload()
+// })
+import pinalog from '~/pinalog.js'
+onBeforeMount(async () => {
+  
+  pinalog();
 
-useHead({
+
+  useHead({
   script: [
-    { src: 'https://platform-api.sharethis.com/js/sharethis.js#property=6391f7a98fb8b6001abbbcce&product=sop', 
-    'type': 'text/javascript',
-    'async': true },
-
     { 'src': 'https://t.usermaven.com/lib.js',
     'data-key':"UMvfbf6vg2" ,
     'data-tracking-host': 'https://events.usermaven.com',
@@ -37,6 +44,11 @@ useHead({
     'innerHTML':`window.usermaven = window.usermaven || (function(){(window.usermavenQ = window.usermavenQ || []).push(arguments);})
     
     `},
+
+    { src: 'https://platform-api.sharethis.com/js/sharethis.js#property=6391f7a98fb8b6001abbbcce&product=sop', 
+    'type': 'text/javascript',
+    'async': true },
+
 
     { 'src': 'https://www.googletagmanager.com/gtag/js?id=UA-3450053-63',
     async: true,
@@ -50,6 +62,11 @@ useHead({
   ],
 
 })
+  
+})
+
+
+
 
 </script>
 
