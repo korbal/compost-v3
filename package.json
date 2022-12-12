@@ -6,7 +6,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "npm run generate && git add . && git commit -m \"deploy: abandoned usehead, added google tag manager based on this: https://www.youtube.com/watch?v=SO-YoOlBnVE should work now \" && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "npm run generate && git add . && git commit -m \"deploy: added addthis social share \" && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.1.3",
