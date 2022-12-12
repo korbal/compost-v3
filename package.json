@@ -6,11 +6,15 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "npm run generate && git add . && git commit -m \"deploy: add onbeforemount in footer to trigger scripts at every path change. see if this fucking works \" && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "npm run generate && git add . && git commit -m \"deploy: abandoned usehead, added google tag manager based on this: https://www.youtube.com/watch?v=SO-YoOlBnVE should work now \" && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.1.3",
     "nuxt": "3.0.0",
     "push-dir": "^0.4.1"
+  },
+  "dependencies": {
+    "@gtm-support/vue-gtm": "^2.0.0",
+    "vue-gtag": "^2.0.1"
   }
 }

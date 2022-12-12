@@ -20,50 +20,47 @@
 </template>
 
 <script setup>
+ 
 
-// onBeforeRouteUpdate(async (to, from, next) => {
-  
-//   console.log('faszjs geci fire')
-  
-//   // await next()
-//   // window.location.reload()
-// })
+
 import pinalog from '~/pinalog.js'
 onBeforeMount(async () => {
   
-  pinalog();
+  
 
-
-  useHead({
-  script: [
-    { 'src': 'https://t.usermaven.com/lib.js',
-    'data-key':"UMvfbf6vg2" ,
-    'data-tracking-host': 'https://events.usermaven.com',
-    'data-autocapture': 'true',
-    'defer': true,
-    'innerHTML':`window.usermaven = window.usermaven || (function(){(window.usermavenQ = window.usermavenQ || []).push(arguments);})
+// this sort of work but dunno why. usermaven seems to fire properly but GA doesn't. sharethis only fires once. abandoned this and went with google tag manager instead. in the plugins directory
+//   useHead({
+//   script: [
+//     { 'src': 'https://t.usermaven.com/lib.js',
+//     'data-key':"UMvfbf6vg2" ,
+//     'data-tracking-host': 'https://events.usermaven.com',
+//     'data-autocapture': 'true',
+//     'defer': true,
+//     'innerHTML':`window.usermaven = window.usermaven || (function(){(window.usermavenQ = window.usermavenQ || []).push(arguments);})
     
-    `},
+//     `},
 
-    { src: 'https://platform-api.sharethis.com/js/sharethis.js#property=6391f7a98fb8b6001abbbcce&product=sop', 
-    'type': 'text/javascript',
-    'async': true },
+//     { src: 'https://platform-api.sharethis.com/js/sharethis.js#property=6391f7a98fb8b6001abbbcce&product=sop', 
+//     'type': 'text/javascript',
+//     'async': true },
 
 
-    { 'src': 'https://www.googletagmanager.com/gtag/js?id=UA-3450053-63',
-    async: true,
-    'innerHTML':`window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+//     { 'src': 'https://www.googletagmanager.com/gtag/js?id=UA-3450053-63',
+//     'async': true,
+//     'innerHTML':`window.dataLayer = window.dataLayer || [];
+//   function gtag(){dataLayer.push(arguments);}
+//   gtag('js', new Date());
 
-  gtag('config', 'UA-3450053-63');
+//   gtag('config', 'UA-3450053-63');
     
-    `}
-  ],
+//     `}
+//   ],
 
-})
+// })
   
 })
+
+
 
 
 
