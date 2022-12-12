@@ -56,8 +56,11 @@
     </div>
     <!-- Category and reference block end -->
 
+    <!-- convertkit form -->
+    <div class="mx-auto flex justify-center mt-4 font-bold underline italic">
+      <a data-formkit-toggle="9746d57124" href="https://ot-ev-ot-nyelv.ck.page/9746d57124">Want better compost in no time?</a>
+    </div>
     
-
  </div>
 </template>
 
