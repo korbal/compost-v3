@@ -1,8 +1,12 @@
 <template>
 
   <Head>
-    <Title>Can I put {{ myObj.name }} in the compost bin?</Title>
+    <Title>Can I put {{ myObj.name }} in the compost bin? Find out here!</Title>
     <Meta name="description" :content="myObj.description.split('.').slice(0,1).join('.') + '. >> Tap here to find out more!'" />
+    <Meta property="og:title" :content="'Can you put ' + myObj.name + ' in the compost bin? Find out here!'" />
+    <Meta property="og:description" :content="myObj.description.split('.').slice(0,1).join('.') + '. >> Tap here to find out more!'" />
+    <Meta property="og:url" :content="'https://canicompostit.com/' +  myObj.path" />
+    <Meta property="og:image" content="../assets/img/composting-og.jpg" />
   </Head>
 
   <div>
@@ -56,10 +60,11 @@
     </div>
     <!-- Category and reference block end -->
 
+
     <!-- convertkit form -->
-    <div class="mx-auto flex justify-center mt-4 font-bold underline italic">
+    <!-- <div class="mx-auto flex justify-center mt-4 font-bold underline italic">
       <a data-formkit-toggle="9746d57124" href="https://ot-ev-ot-nyelv.ck.page/9746d57124">Want better compost in no time?</a>
-    </div>
+    </div> -->
     
  </div>
 </template>
