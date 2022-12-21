@@ -12,13 +12,13 @@ export default defineNuxtConfig({
     head: {
       title: 'Can I Compost It?',
       meta: [{
-        name: 'description', content: 'Quickly find out what items you can throw in your home compost bin. No fluff, try it now!'
+        name: 'description', content: 'Quickly find out what items you can throw in your home compost bin. No more guesswork or confusing lists – just simple, straightforward answers.'
       },
       {
         property: 'og:title', content: 'Can I Compost It?'
       },
       {
-        property: 'og:description', content: 'Quickly find out what items you can throw in your home compost bin. No fluff, try it now!'
+        property: 'og:description', content: 'Quickly find out what items you can throw in your home compost bin. No more guesswork or confusing lists – just simple, straightforward answers.'
       },
       {
         property: 'og:image', content: 'https://canicompostit.com/assets/img/og-image.png'
@@ -27,11 +27,16 @@ export default defineNuxtConfig({
         property: 'og:url', content: 'https://canicompostit.com'
       }
       ],
-      link: [{ rel: 'shortcut icon', type: 'image/x-icon', href: '/assets/img/favicon.ico' }],
+      link: [{
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/assets/img/favicon-32x32.png'
+      }],
 
 
       // link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap' }]
     }
-  }
+  },
   // generate: { routes: ['/items'] },
 })

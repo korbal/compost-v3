@@ -26,7 +26,15 @@
 
 <script setup>
  
-
+// useHead({
+//   link: [
+//     {
+//       rel: 'icon',
+//       type: 'image/x-icon',
+//       href: '/assets/favicon2.ico'
+//     }
+//   ]
+// })
 
 import pinalog from '~/pinalog.js'
 onBeforeMount(async () => {

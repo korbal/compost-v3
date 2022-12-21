@@ -33,7 +33,7 @@
 
   <div class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden shadow px-10">
     
-  <NuxtLink :to=" '/' + `${data.items[`${item.id}`-1].path}`" >
+  <NuxtLink :to=" '/' + `${data.items[`${item.id}`-1].path}` + '/' " >
         <p>{{ item.name }}</p>
   </NuxtLink>
 
