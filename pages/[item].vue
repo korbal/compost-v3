@@ -64,10 +64,13 @@
 
 
     <!-- convertkit form -->
-    <!-- <div class="mx-auto flex justify-center mt-4 font-bold underline italic">
+    <div class="mx-auto flex justify-center mt-4 font-bold underline italic">
       <a data-formkit-toggle="9746d57124" href="https://ot-ev-ot-nyelv.ck.page/9746d57124">Want better compost in no time?</a>
-    </div> -->
+    </div>
     
+    <!-- Addthis.com inline geci -->
+    <!-- <div class="addthis_inline_share_toolbox container mx-auto flex justify-center my-4"></div>  -->
+
  </div>
 </template>
 
@@ -114,7 +117,16 @@ definePageMeta({
 })
 
 
-
+// convertkit javascript
+useHead({
+  script: [
+    {
+      'async': true,
+      'src': 'https://ot-ev-ot-nyelv.ck.page/9746d57124/index.js',
+      'data-uid': '9746d57124'
+    },
+  ],
+})
 
 
 </script>

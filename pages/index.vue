@@ -10,7 +10,7 @@
   <div class="tagline">
   
   
-    The fastest way to find out if you can throw something in your <em>home composting bin</em>. <NuxtLink to="/about"><span class="dotted-underline"><br>Learn more.</span></NuxtLink> <br>v3.03
+    The fastest way to find out if you can throw something in your <em>home composting bin</em>. <NuxtLink to="/about"><span class="dotted-underline"><br>Learn more.</span></NuxtLink> <br>v3.04
     
   </div>
   
