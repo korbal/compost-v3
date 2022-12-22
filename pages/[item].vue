@@ -21,18 +21,20 @@
     <h3 v-else-if="myObj.isCompostable === 'NO ✋🏼'" class="text-xl text-center">You can't put <span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
 
     <h3 v-else class="text-xl text-center">You probably shouldn't put <span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
-<!--     
-    <h3 v-if="myObj.isCompostable === 'YES 🎉'">You can put</h3>
-    <h3 v-else-if="myObj.isCompostable === 'NO ✋🏼'">You can't put</h3>
-    <h3 v-else>You probably can't put</h3>
 
-    {{myObj.name}} into your composting bin!
-     -->
-    <!-- Description of the item -->
     <br>
     <!-- <p class="text-gray-700">{{ myObj.description }}</p> -->
-    <div v-html="myObj.description"></div>
+    <!-- <div v-html="myObj.description"></div> -->
   
+<!-- DESCRIPTION -->
+<!-- splitting sentences into paragraphs for better reading -->
+    <p v-for="sentence in sentences"> {{ sentence }} </p>
+
+<!-- DESCRIPTION END-->
+
+
+
+
     <!-- Category and reference block -->
     <!-- category -->
     <div class="relative flex w-full justify-between mt-3 text-gray-400 text-sm category ">
@@ -76,9 +78,6 @@
 let items = [];
 const {item} = useRoute().params;
 
-
-
-
 const { data } = await useAsyncData('items', () =>
   $fetch(
     'https://script.google.com/macros/s/AKfycbylLKlTRlulUb0x9r9j2Wvxa5W64g49NOT9kOsXR-N6LiPRamqA/exec'
@@ -86,6 +85,7 @@ const { data } = await useAsyncData('items', () =>
 );
 
 items = data._value.items;
+
 
 //TODO: fix error handling. can't generate static pages.
 
@@ -101,6 +101,10 @@ const myArray = itemz.items;
 
 const myObj = myArray.find((myObj) => myObj.path === item);
 
+// DESCRIPTION FORMATTING
+// splitting sentences into paragraphs for better reading. adding a "." at the end of each sentence to make it a proper sentence. " remove the last "." from the last sentence.
+const sentences = myObj.description.split('.').map(sentence => sentence + '.')
+sentences[sentences.length - 1] = sentences[sentences.length - 1].slice(0, -1)
 
 
 

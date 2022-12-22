@@ -16,7 +16,12 @@
         v-for="item in items.items"
         class="flex items-center justify-between py-4 px-10 border-b-2"
       >
-        {{ item.name }}
+        <!-- {{ item.name }} -->
+
+        <NuxtLink :to=" '/' + `${item.path}` + '/' " >
+          <p>{{ item.name }}</p>
+        </NuxtLink>
+        
       </div>
     </div>
   </div>
@@ -27,6 +32,7 @@
 const { data: items } = await useFetch(
   "https://script.google.com/macros/s/AKfycbylLKlTRlulUb0x9r9j2Wvxa5W64g49NOT9kOsXR-N6LiPRamqA/exec"
 );
+console.log(items);
 </script>
 
 <style scoped></style>

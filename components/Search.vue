@@ -9,12 +9,13 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
         </div>
+    
     <input
     id="searchbox"
      v-model="input"
      v-on:keydown="search"
      @input="input = $event.target.value"
-     placeholder="start typing to find out..."
+     placeholder="Start typing to find out..."
      type="search"
      class="rounded w-full py-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline " 
      autofocus autocomplete="off"
