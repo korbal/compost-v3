@@ -64,12 +64,19 @@
 
 
     <!-- convertkit form -->
-    <div class="mx-auto flex justify-center mt-4 font-bold underline italic">
-      <a data-formkit-toggle="9746d57124" href="https://ot-ev-ot-nyelv.ck.page/9746d57124">Want better compost in no time?</a>
+
+    <div class="convertkit mx-auto flex justify-center mt-4 font-bold underline italic text-xl border-red-500">
+      <a  data-formkit-toggle="0a0a04ec56" href="https://ot-ev-ot-nyelv.ck.page/0a0a04ec56">Want better compost in no time?</a>
     </div>
+  
+    <br>
     
+
     <!-- Addthis.com inline geci -->
-    <!-- <div class="addthis_inline_share_toolbox container mx-auto flex justify-center my-4"></div>  -->
+    <!-- <div class="addthis_inline_share_toolbox container mx-auto flex justify-center my-4"></div> -->
+
+    <!-- sharethis.com inline geci -->
+    <div class="sharethis-inline-share-buttons"></div>
 
  </div>
 </template>
@@ -117,14 +124,30 @@ definePageMeta({
 })
 
 
-// convertkit javascript
+// JAVA SCRIPT SHIT
+
+
 useHead({
   script: [
+    // convertkit javascript
+
+    
     {
       'async': true,
-      'src': 'https://ot-ev-ot-nyelv.ck.page/9746d57124/index.js',
-      'data-uid': '9746d57124'
+      'src': 'https://ot-ev-ot-nyelv.ck.page/0a0a04ec56/index.js',
+      'data-uid': '0a0a04ec56'
     },
+    //sharethis.com javascript
+    {
+      'type': 'text/javascript',
+      'src': 'https://platform-api.sharethis.com/js/sharethis.js#property=6391f7a98fb8b6001abbbcce&product=sop',
+      'async': 'async'
+    },
+    // addthis.com javascript
+    // {
+    //   'type': 'text/javascript',
+    //   'src': '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6396f97748f3bf89',
+    // }
   ],
 })
 
@@ -141,6 +164,14 @@ useHead({
   font-size: 1rem;
 }
 
+.convertkit {
+  /* add dashed border */
+  border: 2px dashed #e53e3e;
+  /* add rounded corners */
+  border-radius: 0.25rem;
+  /* add some padding */
+  padding: 0.5rem 1rem;
+}
 
 
 </style>
