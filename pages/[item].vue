@@ -22,13 +22,20 @@
 
     <h3 v-else class="text-xl text-center">You probably shouldn't put <span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
 
-    <br>
+    
     <!-- <p class="text-gray-700">{{ myObj.description }}</p> -->
     <!-- <div v-html="myObj.description"></div> -->
+
+      <!-- convertkit form -->
+
+      <div class="convertkit mx-auto flex justify-center mt-4 font-bold underline italic text-xl border-red-500">
+      <a  data-formkit-toggle="0a0a04ec56" href="https://ot-ev-ot-nyelv.ck.page/0a0a04ec56">Want better compost in no time?</a>
+    </div>
+    <br>
   
-<!-- DESCRIPTION -->
+<!-- DESCRIPTION ...-->
 <!-- splitting sentences into paragraphs for better reading -->
-    <p v-for="sentence in sentences"> {{ sentence }} </p>
+    <p v-for="sentence in sentences"> {{ sentence }}</p>
 
 <!-- DESCRIPTION END-->
 
@@ -65,11 +72,11 @@
 
     <!-- convertkit form -->
 
-    <div class="convertkit mx-auto flex justify-center mt-4 font-bold underline italic text-xl border-red-500">
+    <!-- <div class="convertkit mx-auto flex justify-center mt-4 font-bold underline italic text-xl border-red-500">
       <a  data-formkit-toggle="0a0a04ec56" href="https://ot-ev-ot-nyelv.ck.page/0a0a04ec56">Want better compost in no time?</a>
     </div>
   
-    <br>
+    <br> -->
     
 
     <!-- Addthis.com inline geci -->
@@ -172,6 +179,5 @@ useHead({
   /* add some padding */
   padding: 0.5rem 1rem;
 }
-
 
 </style>

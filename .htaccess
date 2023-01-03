@@ -1,0 +1,4 @@
+# forcing every url that has no trailing slash to have one as the preferred url
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*[^/])$ /$1/ [L,R=301]
