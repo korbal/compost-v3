@@ -22,12 +22,8 @@
 
     <h3 v-else class="text-xl text-center">You probably shouldn't put <span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
 
-    
-    <!-- <p class="text-gray-700">{{ myObj.description }}</p> -->
-    <!-- <div v-html="myObj.description"></div> -->
-
-      <!-- convertkit form -->
-<!-- 
+     <!-- convertkit form -->
+      <!-- 
       <div class="convertkit mx-auto flex justify-center mt-4 font-bold underline italic text-xl border-red-500">
         <a  data-formkit-toggle="0a0a04ec56" href="https://ot-ev-ot-nyelv.ck.page/0a0a04ec56">Want better compost in no time?</a>
       </div> -->
@@ -51,6 +47,29 @@
     <p v-for="sentence in sentences"> {{ sentence }}</p>
 
 <!-- DESCRIPTION END-->
+
+      <!-- Related items' links -->
+      <section>
+        
+        
+          <div>
+
+            <h2 class="mb-2 text-lg font-semibold text-gray-500 dark:text-white">Other items you might be interested in:</h2>
+            <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">fing
+                <li>
+                    At least 10 characters (and up to 100 characters)
+                </li>
+                <li>
+                    At least one lowercase character
+                </li>
+                <li>
+                    Inclusion of at least one special character, e.g., ! @ # ?
+                </li>
+            </ul>
+          </div>
+
+
+      </section>
 
 
 

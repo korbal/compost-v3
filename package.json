@@ -6,7 +6,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "npm run generate && cp sitemap.xml dist/ && cp .htaccess dist/ && git add . && git commit -m \"deploy: added htaccess  \" && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "npm run generate && cp sitemap.xml dist/ && cp .htaccess dist/ && git add . && git commit -m \"deploy: added mailerlite instead of convertkit  \" && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.1.3",
