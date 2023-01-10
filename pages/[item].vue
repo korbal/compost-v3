@@ -48,63 +48,56 @@
 
 <!-- DESCRIPTION END-->
 
-      <!-- Related items' links -->
-      <section>
-        
-        
-          <div>
-
-            <h2 class="mb-2 text-lg font-semibold text-gray-500 dark:text-white">Other items you might be interested in:</h2>
-            <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">fing
-                <li>
-                    At least 10 characters (and up to 100 characters)
-                </li>
-                <li>
-                    At least one lowercase character
-                </li>
-                <li>
-                    Inclusion of at least one special character, e.g., ! @ # ?
-                </li>
-            </ul>
-          </div>
-
-
-      </section>
 
 
 
 
-    <!-- Category and reference block -->
-    <!-- category -->
-    <div class="relative flex w-full justify-between mt-3 text-gray-400 text-sm category ">
-      <p>
-        <div class="group relative inline-block  hover:text-red-500 duration-300">
-            <span class="dotted-underline catref">Category:</span>
-            <!-- Tooltip text here -->
-            <span
-                class=" absolute hidden group-hover:flex -left-5 -top-2 -translate-y-full w-48 px-2 py-1 bg-gray-700 rounded-lg text-center text-white text-sm after:content-[''] after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2 after:border-8 after:border-x-transparent after:border-b-transparent after:border-t-gray-700">Easiest to go for a 50%-50% ratio in volume. It's not perfect, but simple to manage.</span>
-        </div>
-        
-          <span v-if="`${myObj.category}`==='green'" class="bg-green-400 text-white rounded-xl ml-1 px-2 pb-1">{{myObj.category}}</span>
-
-          <span v-else-if="`${myObj.category}`==='brown'" class="brown text-white rounded-xl ml-1 px-2 pb-1">{{myObj.category}}</span>
-
-          <span v-else class="bg-gray-400 text-white rounded-xl ml-1 px-2 pb-1">No category</span>
-          
-          
-    </p>
-       
-
-      <!-- category end -->
-      <!-- only show reference link if there is one in the DB -->
-        <p><div><NuxtLink v-if="myObj.reference" :to="`${myObj.reference}`" target="_blank" class="dotted-underline catref">Reference</NuxtLink></div></p>
+<!-- Category and reference block -->
+<!-- category -->
+<div class="relative flex w-full justify-between mt-3 text-gray-400 text-sm category ">
+  <p>
+    <div class="group relative inline-block  hover:text-red-500 duration-300">
+      <span class="dotted-underline catref">Category:</span>
+      <!-- Tooltip text here -->
+      <span
+      class=" absolute hidden group-hover:flex -left-5 -top-2 -translate-y-full w-48 px-2 py-1 bg-gray-700 rounded-lg text-center text-white text-sm after:content-[''] after:absolute after:left-1/2 after:top-[100%] after:-translate-x-1/2 after:border-8 after:border-x-transparent after:border-b-transparent after:border-t-gray-700">Easiest to go for a 50%-50% ratio in volume. It's not perfect, but simple to manage.</span>
     </div>
-    <!-- Category and reference block end -->
+    
+    <span v-if="`${myObj.category}`==='green'" class="bg-green-400 text-white rounded-xl ml-1 px-2 pb-1">{{myObj.category}}</span>
+    
+    <span v-else-if="`${myObj.category}`==='brown'" class="brown text-white rounded-xl ml-1 px-2 pb-1">{{myObj.category}}</span>
+    
+    <span v-else class="bg-gray-400 text-white rounded-xl ml-1 px-2 pb-1">No category</span>
+    
+    
+  </p>
+  
+  
+  <!-- category end -->
+  <!-- only show reference link if there is one in the DB -->
+  <p><div><NuxtLink v-if="myObj.reference" :to="`${myObj.reference}`" target="_blank" class="dotted-underline catref">Reference</NuxtLink></div></p>
+</div>
+<!-- Category and reference block end -->
 
+<!-- Related items' links -->
+<section>
+  <h3 class="text-xl text-center  ">You might also be interested in:</h3>
+  
+    <!-- use the randomItemsObj and generate an unordered list with nuxtlinks. to='path' -->
+    <ul class="flex flex-wrap justify-center mt-3">
+      <li v-for="item in randomItemsObj" :key="item.id" class="flex flex-col items-center justify-center w-1/2 sm:w-1/3 ">
+        <NuxtLink :to=" '/' + `${item.path}` + '/'" class="flex flex-col items-center justify-center w-32 h-32 m-2 text-center bg-gray-100 rounded-lg shadow-md hover:bg-gray-200">
+          <img src="../assets/img/home-composting-bin.png" class="w-24 h-24" alt="item.name">
+          <span class="mt-2 text-sm text-gray-500 dark:text-gray-700">{{item.name}}</span>
+        </NuxtLink>
+      </li>
+    </ul>
+</section>
+<!-- Related items end -->
 
-    <!-- convertkit form -->
+<!-- convertkit form -->
 
-    <!-- <div class="convertkit mx-auto flex justify-center mt-4 font-bold underline italic text-xl border-red-500">
+<!-- <div class="convertkit mx-auto flex justify-center mt-4 font-bold underline italic text-xl border-red-500">
       <a  data-formkit-toggle="0a0a04ec56" href="https://ot-ev-ot-nyelv.ck.page/0a0a04ec56">Want better compost in no time?</a>
     </div>
   
@@ -155,12 +148,47 @@ const myObj = myArray.find((myObj) => myObj.path === item);
 const sentences = myObj.description.split('.').map(sentence => sentence + '.')
 sentences[sentences.length - 1] = sentences[sentences.length - 1].slice(0, -1)
 
+// pick 3 random items from myArray and put them in an object. use this object to generate the links to the other items. use only the path and name properties.
+
+
+// const randomItems = Array.from({length: 3}, () => myArray[Math.floor(Math.random() * myArray.length)]);
+
+
+const randomItems = Array.from({length: 3}, () => myArray[Math.floor(Math.random() * myArray.length)]);
+const randomItemsObj = Object.assign({}, ...randomItems.map((item, i) => ({[i]: item})));
+console.log(randomItemsObj)
 
 
 
 definePageMeta({
   layout: 'itemdetails'
 })
+
+//PRNG generator used to give the same random number at every build so that the same items will be picked for the related items section
+
+function LCG(seed) {
+  // Constants for the LCG algorithm
+  this.a = 1103515245;
+  this.c = 12345;
+  this.m = Math.pow(2, 32);
+
+  // Seed the generator
+  this.state = seed;
+}
+
+LCG.prototype.next = function() {
+  // Advance the state
+  this.state = (this.a * this.state + this.c) % this.m;
+
+  // Return a random number between 0 and 1
+  return this.state / this.m;
+}
+
+const generator = new LCG(666);
+//console.log(generator.next());
+//use picks same from 6 numbers. only works on page level, not good. (Math.floor(generator.next() * 6) + 1);
+
+
 
 
 // JAVA SCRIPT SHIT
