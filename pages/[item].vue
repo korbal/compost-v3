@@ -27,11 +27,24 @@
     <!-- <div v-html="myObj.description"></div> -->
 
       <!-- convertkit form -->
+<!-- 
+      <div class="convertkit mx-auto flex justify-center mt-4 font-bold underline italic text-xl border-red-500">
+        <a  data-formkit-toggle="0a0a04ec56" href="https://ot-ev-ot-nyelv.ck.page/0a0a04ec56">Want better compost in no time?</a>
+      </div> -->
+      
+      <!-- Mailerlite form -->
+      <!-- <div class="convertkit mx-auto flex justify-center mt-4 font-bold underline italic text-xl border-red-500">
+        <button class="ml-onclick-form" onclick="ml('show', 'XvWvSp', true)">Want better compost in no time?</button>
+      </div > -->
+      
 
       <div class="convertkit mx-auto flex justify-center mt-4 font-bold underline italic text-xl border-red-500">
-      <a  data-formkit-toggle="0a0a04ec56" href="https://ot-ev-ot-nyelv.ck.page/0a0a04ec56">Want better compost in no time?</a>
-    </div>
-    <br>
+        <button class="ml-onclick-form" onclick="ml('show', 'fp7jeX', true)">Want better compost in no time?</button>
+      </div >
+
+      <br>
+
+      
   
 <!-- DESCRIPTION ...-->
 <!-- splitting sentences into paragraphs for better reading -->
