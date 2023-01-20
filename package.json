@@ -6,7 +6,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "npm run generate && cp sitemap.xml dist/ && cp .htaccess dist/ && git add . && git commit -m \"deploy: v3.3.0 added related items links. random order. can't pseudorandom it on site level, only on page level. not good for seo but hey.  \" && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "npm run generate && cp sitemap.xml dist/ && cp .htaccess dist/ && git add . && git commit -m \"deploy: v3.4.0 added buildModules PWA to turn it into a progressive web app  \" && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.1.3",
