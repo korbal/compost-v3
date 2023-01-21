@@ -11,7 +11,15 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Can I Compost It?',
-      meta: [{
+      meta: [
+        {
+          charset: 'utf-8'
+        },
+        {
+          name: 'viewport', content: 'width=device-width, initial-scale=1'
+        },
+        
+        {
         name: 'description', content: 'Quickly find out what items you can throw in your home compost bin. No more guesswork or confusing lists – just simple, straightforward answers.'
       },
       {
@@ -26,11 +34,12 @@ export default defineNuxtConfig({
       {
         property: 'og:url', content: 'https://canicompostit.com'
       }
+      
       ],
       link: [{
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/assets/img/favicon.ico'
+        href: '/assets/img/favicon2.ico'
       }],
 
 
