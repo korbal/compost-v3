@@ -6,7 +6,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "npm run generate && cp sitemap.xml dist/ && cp .htaccess dist/ && cp favicon.ico dist/ && git add . && git commit -m \"deploy: v3.4.1 moving favicon to dist at build time manually  \" && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "npm run generate && cp sitemap.xml dist/ && cp .htaccess dist/ && cp favicon.ico dist/ && git add . && git commit -m \"deploy: v3.4.1 moving favicon to dist at build time manually again  \" && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.1.3",
