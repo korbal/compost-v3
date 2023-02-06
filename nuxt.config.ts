@@ -8,6 +8,19 @@ export default defineNuxtConfig({
   //experimental.payloadExtraction = false
   css: ["~/assets/css/main.css"],
 
+  pwa: {
+    meta: {
+      author: "Balint Korosi",
+    },
+    manifest: {
+      name: "Can I Compost It?",
+      lang: "en",
+      display: "standalone",
+      description:
+        "The fastest way to find out if you can put something in your home composting bin.",
+    },
+  },
+
   app: {
     head: {
       title: "Can I Compost It?",
@@ -54,6 +67,6 @@ export default defineNuxtConfig({
       // link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap' }]
     },
   },
-  buildModules: ["@nuxtjs/pws"],
+  buildModules: ["@nuxtjs/pwa"],
   // generate: { routes: ['/items'] },
 });
