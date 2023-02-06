@@ -1,7 +1,7 @@
 <template>
 
   <Head>
-    <Title>Can I put {{ myObj.name }} in the compost bin? Find out here!</Title>
+    <Title>Can You put {{ myObj.name }} in the compost bin? Find out here!</Title>
     <Meta name="description" :content="myObj.description.split('.').slice(0,1).join('.') + '. >> Tap here to find out more!'" />
     <Meta property="og:title" :content="'Can you put ' + myObj.name + ' in the compost bin? Find out here!'" />
     <Meta property="og:description" :content="myObj.description.split('.').slice(0,1).join('.') + '. >> Tap here to find out more!'" />
@@ -33,10 +33,13 @@
         <button class="ml-onclick-form" onclick="ml('show', 'XvWvSp', true)">Want better compost in no time?</button>
       </div > -->
       
-
-      <div class="convertkit mx-auto flex justify-center mt-4 font-bold underline italic text-xl border-red-500">
+      <!-- mailerlite text link with popup  -->
+      <!-- <div class="convertkit mx-auto flex justify-center mt-4 font-bold underline italic text-xl border-red-500">
         <button class="ml-onclick-form" onclick="ml('show', 'fp7jeX', true)">Want better compost in no time?</button>
-      </div >
+      </div > -->
+        
+      <!-- mailerlite embedded form -->
+      <div class="ml-embedded" data-form="XvWvSp"></div>
 
       <br>
 

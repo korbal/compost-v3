@@ -15,6 +15,7 @@
       
      <p> <a href="mailto:canicompostit@gmail.com?subject=canicompostit.com">Hit me up in email</a> or <a href="https://twitter.com/korosibalint">@korosibalint on Twitter</a></p>
     <p>Balint</p>
+    <NuxtLink href="/">Go Back To Homepage</NuxtLink>
 
     </div>
 

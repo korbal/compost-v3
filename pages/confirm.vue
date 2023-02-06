@@ -13,6 +13,7 @@
 
      <p>Once you've confirmed your email, you'll get the guide in your inbox. If you don't see it, check your spam folder. If you still can't find it, <a href="mailto:canicompostit@gmail.com?subject=canicompostit.com">let me know in email</a> or <a href="https://twitter.com/korosibalint">@korosibalint on Twitter</a></p>
     <p>Balint</p>
+    <NuxtLink href="/">Go Back To Homepage</NuxtLink>
 
     </div>
 
