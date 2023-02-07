@@ -38,8 +38,13 @@
         <button class="ml-onclick-form" onclick="ml('show', 'fp7jeX', true)">Want better compost in no time?</button>
       </div > -->
         
-      <!-- mailerlite embedded form -->
+      <!-- mailerlite embedded form with javascript. needs mailerlite snippet, that is in tag manager. but doesn't get rendered at build time as that is client side-->
       <div class="ml-embedded" data-form="XvWvSp"></div>
+
+
+      
+
+
 
       <br>
 
