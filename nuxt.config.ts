@@ -2,7 +2,7 @@ import { MiddlewareKey } from "./.nuxt/types/middleware.d";
 // https://v3.nuxtjs.org/api/configuration/nuxt.config ---
 export default defineNuxtConfig({
   target: "static",
-  //ssr: true,
+  ssr: true,
 
   modules: ["@nuxtjs/tailwindcss"],
   //experimental.payloadExtraction = false
@@ -61,6 +61,14 @@ export default defineNuxtConfig({
           rel: "icon",
           type: "image/x-icon",
           href: "./favicon.ico",
+        },
+      ],
+      script: [
+        {
+          async: true,
+          defer: true,
+          src: "https://umami-production-286f.up.railway.app/umami.js",
+          "data-website-id": "b7c72cc1-ea2c-438f-b955-e5129634c3a7",
         },
       ],
 
