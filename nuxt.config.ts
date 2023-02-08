@@ -23,7 +23,8 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Can I Compost It?",
+      title:
+        "Compostable Item Database | 400+ Items Listed | CanICompostIt.com",
       meta: [
         {
           charset: "utf-8",
@@ -36,16 +37,17 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Quickly find out what items you can throw in your home compost bin. No more guesswork or confusing lists – just simple, straightforward answers.",
+            "Find out if your waste is compostable with our comprehensive searchable database of 400+ items. Check now at CanICompostIt.com >>",
         },
         {
           property: "og:title",
-          content: "Can I Compost It?",
+          content:
+            "Compostable Item Database | 400+ Items Listed | CanICompostIt.com",
         },
         {
           property: "og:description",
           content:
-            "Quickly find out what items you can throw in your home compost bin. No more guesswork or confusing lists – just simple, straightforward answers.",
+            "Find out if your waste is compostable with our comprehensive searchable database of 400+ items. Check now at CanICompostIt.com >>",
         },
         {
           property: "og:image",

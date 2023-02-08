@@ -7,6 +7,15 @@
     </div>
     
   </div> -->
+
+  <Head>
+    <Title>Compostable Item Database | 400+ Items Listed | CanICompostIt.com</Title>
+    <Meta name="description" content="Find out if your waste is compostable with our comprehensive searchable database of 400+ items. Check now at CanICompostIt.com >>" />
+    <Meta property="og:title" content="Compostable Item Database | 400+ Items Listed | CanICompostIt.com" />
+    <Meta property="og:description" content="Find out if your waste is compostable with our comprehensive searchable database of 400+ items. Check now at CanICompostIt.com >>" />
+    <Meta property="og:url" content="https://canicompostit.com/items" />
+    <Meta property="og:image" content="../assets/img/composting-og.jpg" />
+  </Head>
   <div>
     <div class="overflow-y-auto max-w-md mx-auto">
       <h3 class="text-xl text-center">
