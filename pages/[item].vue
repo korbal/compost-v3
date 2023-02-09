@@ -22,6 +22,11 @@
 
     <h3 v-else class="text-xl text-center">You probably shouldn't put <span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
 
+
+
+
+
+
      <!-- convertkit form -->
       <!-- 
       <div class="convertkit mx-auto flex justify-center mt-4 font-bold underline italic text-xl border-red-500">
@@ -40,9 +45,6 @@
         
       <!-- mailerlite embedded form with javascript. needs mailerlite snippet, that is in tag manager. but doesn't get rendered at build time as that is client side-->
       <div class="ml-embedded" data-form="XvWvSp"></div>
-
-
-      
 
 
 
