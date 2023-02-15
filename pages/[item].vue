@@ -44,7 +44,7 @@
       </div > -->
         
       <!-- mailerlite embedded form with javascript. needs mailerlite snippet, that is in tag manager. but doesn't get rendered at build time as that is client side-->
-      <div class="ml-embedded umami--click--signup-form" data-form="XvWvSp"></div>
+      <div class="ml-embedded umami--click--signup-click-signupbutton" data-form="XvWvSp"></div>
 
 
       <br>
