@@ -46,19 +46,26 @@
           <p>Compostable?</p>
         </div>
       </div>
-      <div
+
+      <!-- loop through the items and display them -->
+
+      <NuxtLink
         v-for="item in items.items"
-        class="flex flex-row items-center justify-between px-10 pt-4 border-b-2 hover:bg-gray-200 cursor-pointer"
+        :to="'/' + `${item.path}` + '/'"
+        class="block"
+        key="item.id"
       >
-        <div>
-          <NuxtLink :to="'/' + `${item.path}` + '/'">
+        <div
+          class="flex flex-row items-center justify-between px-10 pt-4 border-b-2 hover:bg-gray-100"
+        >
+          <div class="flex-grow">
             <p class="text-blue-500 hover:text-blue-700">{{ item.name }}</p>
-          </NuxtLink>
+          </div>
+          <div>
+            <p>{{ item.isCompostable }}</p>
+          </div>
         </div>
-        <div>
-          <p>{{ item.isCompostable }}</p>
-        </div>
-      </div>
+      </NuxtLink>
     </div>
   </div>
 </template>
