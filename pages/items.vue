@@ -9,28 +9,55 @@
   </div> -->
 
   <Head>
-    <Title>Compostable Item Database | 400+ Items Listed | CanICompostIt.com</Title>
-    <Meta name="description" content="Find out if your waste is compostable with our comprehensive searchable database of 400+ items. Check now at CanICompostIt.com >>" />
-    <Meta property="og:title" content="Compostable Item Database | 400+ Items Listed | CanICompostIt.com" />
-    <Meta property="og:description" content="Find out if your waste is compostable with our comprehensive searchable database of 400+ items. Check now at CanICompostIt.com >>" />
+    <Title
+      >Compostable Item Database | 400+ Items Listed | CanICompostIt.com</Title
+    >
+    <Meta
+      name="description"
+      content="Find out if your waste is compostable with our comprehensive searchable database of 400+ items. Check now at CanICompostIt.com >>"
+    />
+    <Meta
+      property="og:title"
+      content="Compostable Item Database | 400+ Items Listed | CanICompostIt.com"
+    />
+    <Meta
+      property="og:description"
+      content="Find out if your waste is compostable with our comprehensive searchable database of 400+ items. Check now at CanICompostIt.com >>"
+    />
     <Meta property="og:url" content="https://canicompostit.com/items" />
     <Meta property="og:image" content="../assets/img/composting-og.jpg" />
   </Head>
   <div>
     <div class="overflow-y-auto max-w-md mx-auto">
       <h3 class="text-xl text-center">
-        All the items in the database <br> (current number: {{ items.items.length }})
+        All the items in the database <br />
+        (current number: {{ items.items.length }})
       </h3>
+      <p class="text-center text-sm">
+        Click on an item to find out more about it
+      </p>
+      <div
+        class="flex flex-row items-center justify-between pt-4 px-10 border-b-2 font-bold"
+      >
+        <div>
+          <p>Item</p>
+        </div>
+        <div>
+          <p>Compostable?</p>
+        </div>
+      </div>
       <div
         v-for="item in items.items"
-        class="flex items-center justify-between py-4 px-10 border-b-2"
+        class="flex flex-row items-center justify-between px-10 pt-4 border-b-2 hover:bg-gray-200 cursor-pointer"
       >
-        <!-- {{ item.name }} -->
-
-        <NuxtLink :to=" '/' + `${item.path}` + '/' " >
-          <p>{{ item.name }}</p>
-        </NuxtLink>
-        
+        <div>
+          <NuxtLink :to="'/' + `${item.path}` + '/'">
+            <p class="text-blue-500 hover:text-blue-700">{{ item.name }}</p>
+          </NuxtLink>
+        </div>
+        <div>
+          <p>{{ item.isCompostable }}</p>
+        </div>
       </div>
     </div>
   </div>
