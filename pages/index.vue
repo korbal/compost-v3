@@ -15,7 +15,7 @@
       <NuxtLink to="/about"
         ><span class="dotted-underline"><br />Learn more.</span></NuxtLink
       >
-      <br />v3.5.14.
+      <br />v3.5.15.
     </div>
   </div>
 </template>
