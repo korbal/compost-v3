@@ -102,8 +102,9 @@ items = data._value.items;
 // }
 
 function filteredList() {
-  return items.filter((item) =>
-    item.name.toLowerCase().includes(input.value.toLowerCase())
+  return items.filter(
+    (item) =>
+      item.name && item.name.toLowerCase().includes(input.value.toLowerCase())
   );
 }
 </script>
