@@ -24,6 +24,8 @@
 
 
 
+<p style="background-color: #FFCC66; color: #FFFFFF; padding: 15px; font-size: 18px; font-weight: bold; text-align: center; display: inline-block; border-radius: 10px;"> Tired of foul smells from your compost bin? Get our quick and easy guide to 5 natural odor-fighting recipes.<br> <a href="https://bit.ly/composting-tips"><button style="background-color: #BE0503; color: #FFCC66; padding: 10px 20px; font-size: 14px; font-weight: bold; border: none; border-radius: 20px; cursor: pointer;">View Now</button></a> </p>
+
 
 
 

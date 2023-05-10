@@ -2,40 +2,15 @@
   <div>
     <!-- Subheading -->
     <h3 class="text-xl text-center">
-      Thank You for Your Interest in our Resources
+      Thank You for Your Interest In The Guide!
     </h3>
 
     <p class="text-gray-700">
-      I am currently working on creating valuable resources that will help you
-      achieve better composting results. Your interest in these resources means
-      a lot to me, and I appreciate your patience.
-    </p>
-
-    <p>
-      The resources you have requested are still in development, but I am
-      working on them diligently to ensure they meet the highest standards of
-      usefulness and usability. I want to make sure that these resources provide
-      you with the most practical and effective solutions to your composting
-      needs.
-    </p>
-
-    <p>
-      As an eco-friendly individual, you understand the importance of reducing
-      waste and making environmentally friendly choices. My mission is to
-      provide you with the tools you need to achieve these goals. The resources
-      I am creating will help you compost more efficiently, reduce waste, and
-      make more eco-friendly choices in your daily life.
-    </p>
-
-    <p>
-      Please check back soon for updates on when the resources will be
-      available. Hopefully, they will be ready for you to use in the near
-      future. In the meantime, if you have any suggestions or feedback, please
-      <a href="mailto:korosibalint@yahoo.co.uk?subject=canicompostit.com"
-        >let me know via email</a
-      >
-      or reach out to me on
-      <a href="https://twitter.com/korosibalint">Twitter @korosibalint</a>.
+      You can download the guide from the link below. It's a PDF file, so you
+      can read it on any device.
+      <br /><br />
+      <!-- add link to text https://bit.ly/better-composting-->
+      <a href="https://bit.ly/better-composting"> Download the guide here.</a>
     </p>
 
     <p>
