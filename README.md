@@ -1,3 +1,7 @@
+# canicompostit.com 
+A web app that is a searchable database of home compostable items. Already up to 1500 unique visitors a month. 
+[canicompostit.com](https://canicompostit.com)
+
 # Nuxt 3 Minimal Starter
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
