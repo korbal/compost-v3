@@ -1,4 +1,4 @@
-# canicompostit.com 
+#canicompostit.com 
 A web app that is a searchable database of home compostable items. Already up to 1500 unique visitors a month. 
 [canicompostit.com](https://canicompostit.com)
 
