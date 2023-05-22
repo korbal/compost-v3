@@ -16,11 +16,18 @@
     <br>
     
     <!-- Subheading -->
-    <h3 v-if="myObj.isCompostable === 'YES 🎉'" class="text-xl text-center">You can put <span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
+    <!-- <h3 v-if="myObj.isCompostable === 'YES 🎉'" class="text-xl text-center">You can put <span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
 
     <h3 v-else-if="myObj.isCompostable === 'NO ✋🏼'" class="text-xl text-center">You can't put <span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
 
+    <h3 v-else class="text-xl text-center">You probably shouldn't put <span class="italic">{{myObj.name}}</span> into your composting bin!</h3> -->
+
+    <h3 v-if="myObj.isCompostable.includes('🎉')" class="text-xl text-center">You can put <span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
+
+    <h3 v-else-if="myObj.isCompostable.includes('✋🏼') " class="text-xl text-center">You can't put <span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
+
     <h3 v-else class="text-xl text-center">You probably shouldn't put <span class="italic">{{myObj.name}}</span> into your composting bin!</h3>
+  
 
 
 
