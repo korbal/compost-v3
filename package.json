@@ -6,7 +6,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "npm run generate && cp ads.txt dist/ && cp sitemap.xml dist/ && cp .htaccess dist/ && cp favicon.ico dist/ && git add . && git commit -m \"deploy: v3.6.6 repush \" && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "npm run generate && cp _headers dist/ && cp ads.txt dist/ && cp sitemap.xml dist/ && cp .htaccess dist/ && cp favicon.ico dist/ && git add . && git commit -m \"deploy: v3.6.8 netlify caching disabled by _headers \" && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "@nuxtjs/pwa": "^3.3.5",
