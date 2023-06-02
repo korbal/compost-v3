@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="content">
-      <div class="max-w-md mx-auto px-5">
+      <div class="max-w-md mx-auto px-2 md:px-0">
         <div
           class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden shadow"
         >
@@ -27,7 +27,7 @@
             v-model="input"
             v-on:keydown="search"
             @input="input = $event.target.value"
-            placeholder="Start typing to find out..."
+            placeholder="Search for an item..."
             type="search"
             class="rounded w-full py-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             autofocus
@@ -84,6 +84,7 @@ const { data } = await useAsyncData("items", () =>
     "https://script.google.com/macros/s/AKfycbylLKlTRlulUb0x9r9j2Wvxa5W64g49NOT9kOsXR-N6LiPRamqA/exec"
   )
 );
+
 items = data._value.items;
 
 // onBeforeMount(() =>{

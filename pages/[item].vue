@@ -12,7 +12,9 @@
   <div>
     
     <!-- Whether it's compostable -->
-    <h2 class="answer text-4xl text-center"> {{myObj.isCompostable}}</h2>
+    <h1 class="text-4xl text-center">Can I put <span class="italic">{{ myObj.name }}</span> in my compost bin?</h1>
+    <br>
+    <h2 class="answer text-4xl text-center font-bold"> {{myObj.isCompostable}}</h2>
     <br>
     
     <!-- Subheading -->
@@ -94,15 +96,19 @@
   <!-- category end -->
   <!-- only show reference link if there is one in the DB -->
   <p><div><NuxtLink v-if="myObj.reference" :to="`${myObj.reference}`" target="_blank" class="dotted-underline catref">Reference</NuxtLink></div></p>
+  
 </div>
+<Search />
 <!-- Category and reference block end -->
+
+
 
 <!-- Related items' links -->
 <section>
-  <h3 class="text-xl text-center  ">You might also be interested in:</h3>
+  <!-- <h3 class="text-xl text-center  ">Other items:</h3> -->
   
     <!-- use the randomItemsObj and generate an unordered list with nuxtlinks. to='path' -->
-    <ul class="flex flex-wrap justify-center mt-3">
+    <ul class="flex flex-wrap justify-center mt-3 px-3">
       <li v-for="item in randomItemsObj" :key="item.id" class="flex flex-col items-center justify-center w-1/2 sm:w-1/3 ">
         <NuxtLink :to=" '/' + `${item.path}` + '/'" class="flex flex-col items-center justify-center w-32 h-32 m-2 text-center bg-gray-100 rounded-lg shadow-md hover:bg-gray-200">
           <img src="../assets/img/home-composting-bin.png" class="w-24 h-24" alt="item.name">
