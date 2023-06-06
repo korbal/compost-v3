@@ -221,6 +221,8 @@
     <!-- sharethis.com inline geci -->
     <div class="sharethis-inline-share-buttons"></div>
   </div>
+
+  fingbaszás
 </template>
 
 <script setup>
