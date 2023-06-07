@@ -15,7 +15,7 @@
       <NuxtLink to="/about"
         ><span class="dotted-underline"><br />Learn more.</span></NuxtLink
       >
-      <br />v3.7.0.
+      <br />v3.7.0. SEXperimental
     </div>
   </div>
 </template>
