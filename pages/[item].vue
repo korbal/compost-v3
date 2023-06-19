@@ -31,33 +31,41 @@
   </Head>
 
   <div>
+    <!-- top part -->
+
+    <nuxt-img src="`myObj.image_url`" />
+    <div>
+      <h1 class="text-4xl text-center">
+        Can I put <span class="italic">{{ myObj.name }}</span> in my compost
+        bin?
+      </h1>
+
+      <br />
+      <h2 class="answer text-4xl text-center font-bold">
+        {{ myObj.isCompostable }}
+      </h2>
+      <br />
+
+      <h3 v-if="myObj.isCompostable.includes('🎉')" class="text-xl text-center">
+        You can put <span class="italic">{{ myObj.name }}</span> into your
+        composting bin!
+      </h3>
+
+      <h3
+        v-else-if="myObj.isCompostable.includes('✋🏼')"
+        class="text-xl text-center"
+      >
+        You can't put <span class="italic">{{ myObj.name }}</span> into your
+        composting bin!
+      </h3>
+
+      <h3 v-else class="text-xl text-center">
+        You probably shouldn't put
+        <span class="italic">{{ myObj.name }}</span> into your composting bin!
+      </h3>
+    </div>
     <!-- Whether it's compostable -->
-    <h1 class="text-4xl text-center">
-      Can I put <span class="italic">{{ myObj.name }}</span> in my compost bin?
-    </h1>
-    <br />
-    <h2 class="answer text-4xl text-center font-bold">
-      {{ myObj.isCompostable }}
-    </h2>
-    <br />
-
-    <h3 v-if="myObj.isCompostable.includes('🎉')" class="text-xl text-center">
-      You can put <span class="italic">{{ myObj.name }}</span> into your
-      composting bin!
-    </h3>
-
-    <h3
-      v-else-if="myObj.isCompostable.includes('✋🏼')"
-      class="text-xl text-center"
-    >
-      You can't put <span class="italic">{{ myObj.name }}</span> into your
-      composting bin!
-    </h3>
-
-    <h3 v-else class="text-xl text-center">
-      You probably shouldn't put
-      <span class="italic">{{ myObj.name }}</span> into your composting bin!
-    </h3>
+    <!-- top part end -->
 
     <!-- banner embed -->
     <p

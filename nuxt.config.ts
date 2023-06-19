@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   target: "static",
   ssr: true,
 
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/image"],
   //experimental.payloadExtraction = false
   css: ["~/assets/css/main.css"],
 
@@ -78,5 +78,8 @@ export default defineNuxtConfig({
     },
   },
   buildModules: ["@nuxtjs/pwa"],
+  build: {
+    transpile: ["nuxt-img"],
+  },
   // generate: { routes: ['/items'] },
 });
