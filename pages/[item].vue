@@ -80,8 +80,8 @@
         border-radius: 10px;
       "
     >
-      Tired of foul smells from your compost bin? Get our quick and easy guide
-      to 5 natural odor-fighting recipes.<br />
+      Get the right balance of brown and green composting materials in your bin
+      with our expert guide.<br />
       <a href="https://bit.ly/composting-tips"
         ><button
           style="
