@@ -82,7 +82,7 @@
     >
       Get the right balance of brown and green composting materials in your bin
       with our expert guide.<br />
-      <a href="https://bit.ly/composting-tips"
+      <a href="https://go.canicompostit.com/green-brown"
         ><button
           style="
             background-color: #be0503;
