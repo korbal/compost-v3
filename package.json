@@ -6,7 +6,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "npm run generate && cp _headers dist/ && cp ads.txt dist/ && cp sitemap.xml dist/ && cp .htaccess dist/ && cp favicon.ico dist/ && git add . && git commit -m \"deploy: v3.7.3 set up ebook launch banner \" && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "npm run generate && cp _headers dist/ && cp ads.txt dist/ && cp sitemap.xml dist/ && cp .htaccess dist/ && cp favicon.ico dist/ && git add . && git commit -m \"deploy: v3.7.4 set up ebook launch banner w link\" && git push && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "@nuxt/image": "^1.0.0-rc.1",
