@@ -161,20 +161,11 @@
       with our expert guide.<br />
       <a href="https://go.canicompostit.com/green-brown"
         ><button
-          style="
-            background-color: #be0503;
-            color: #ffcc66;
-            padding: 10px 20px;
-            font-size: 14px;
-            font-weight: bold;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-          "
+          class="mt-4 bg-red-500 text-yellow-300 py-2 px-4 text-lg font-bold rounded-full cursor-pointer"
         >
           View Now
-        </button></a
-      >
+        </button>
+      </a>
     </p>
 
     <!-- mailerlite embedded form with javascript. needs mailerlite snippet, that is in tag manager. but doesn't get rendered at build time as that is client side-->
@@ -290,14 +281,13 @@ sentences[sentences.length - 1] = sentences[sentences.length - 1].slice(0, -1);
 
 // const randomItems = Array.from({length: 3}, () => myArray[Math.floor(Math.random() * myArray.length)]);
 const randomItems = Array.from(
-  { length: 2 },
+  { length: 3 },
   () => myArray[Math.floor(Math.random() * myArray.length)]
 );
 const randomItemsObj = Object.assign(
   {},
   ...randomItems.map((item, i) => ({ [i]: item }))
 );
-console.log(randomItemsObj);
 
 definePageMeta({
   layout: "itemdetails",
