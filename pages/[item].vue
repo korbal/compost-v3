@@ -33,12 +33,22 @@
   <div>
     <!-- top part -->
 
-    <nuxt-img src="`myObj.image_url`" />
     <div>
-      <h1 class="text-4xl text-center">
-        Can I put <span class="italic">{{ myObj.name }}</span> in my compost
-        bin?
-      </h1>
+      <!-- if there is an image, use that, if not, use placeholder in background -->
+      <div class="relative">
+        <img v-if="myObj.image_url" :src="myObj.image_url" class="w-full" />
+        <img
+          v-else
+          src="../assets/img/home-composting-bin.png"
+          class="w-full"
+        />
+        <h1
+          class="absolute top-1 sm:top-1/4 transform text-white md:text-4xl sm:text-3xl text-2xl font-bold bg-gray-800 bg-opacity-70 rounded-xl p-4 m-4 text-center"
+        >
+          Can I put <span class="italic">{{ myObj.name }}</span> in my compost
+          bin?
+        </h1>
+      </div>
 
       <br />
       <h2 class="answer text-4xl text-center font-bold">
