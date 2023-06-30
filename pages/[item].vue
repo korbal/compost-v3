@@ -57,7 +57,7 @@
       </div>
 
       <br />
-      <h2 class="answer text-4xl text-center font-bold">
+      <h2 class="answer md:text-8xl text-4xl text-center font-bold">
         {{ myObj.isCompostable }}
       </h2>
       <br />
