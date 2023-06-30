@@ -290,7 +290,7 @@ sentences[sentences.length - 1] = sentences[sentences.length - 1].slice(0, -1);
 
 // const randomItems = Array.from({length: 3}, () => myArray[Math.floor(Math.random() * myArray.length)]);
 const randomItems = Array.from(
-  { length: 3 },
+  { length: 2 },
   () => myArray[Math.floor(Math.random() * myArray.length)]
 );
 const randomItemsObj = Object.assign(
