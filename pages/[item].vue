@@ -67,39 +67,6 @@
     <!-- Whether it's compostable -->
     <!-- top part end -->
 
-    <!-- banner embed -->
-    <p
-      style="
-        background-color: #ffcc66;
-        color: #ffffff;
-        padding: 15px;
-        font-size: 18px;
-        font-weight: bold;
-        text-align: center;
-        display: inline-block;
-        border-radius: 10px;
-      "
-    >
-      Get the right balance of brown and green composting materials in your bin
-      with our expert guide.<br />
-      <a href="https://go.canicompostit.com/green-brown"
-        ><button
-          style="
-            background-color: #be0503;
-            color: #ffcc66;
-            padding: 10px 20px;
-            font-size: 14px;
-            font-weight: bold;
-            border: none;
-            border-radius: 20px;
-            cursor: pointer;
-          "
-        >
-          View Now
-        </button></a
-      >
-    </p>
-
     <div class="text-center font-bold text-xl mb-4">Key info</div>
 
     <section class="">
@@ -159,6 +126,40 @@
         </div>
       </div>
     </section>
+
+    <!-- banner embed -->
+    <p
+      class="mt-4 mb-0"
+      style="
+        background-color: #ffcc66;
+        color: #ffffff;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+      "
+    >
+      Get the right balance of brown and green composting materials in your bin
+      with our expert guide.<br />
+      <a href="https://go.canicompostit.com/green-brown"
+        ><button
+          style="
+            background-color: #be0503;
+            color: #ffcc66;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+          "
+        >
+          View Now
+        </button></a
+      >
+    </p>
 
     <!-- mailerlite embedded form with javascript. needs mailerlite snippet, that is in tag manager. but doesn't get rendered at build time as that is client side-->
     <div class="ml-embedded" data-form="XvWvSp"></div>
