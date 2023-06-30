@@ -39,13 +39,13 @@
         <img
           v-if="myObj.image_url"
           :src="myObj.image_url"
-          class="w-full"
+          class="w-full rounded-xl"
           :alt="myObj.name"
         />
         <img
           v-else
           src="../assets/img/home-composting-bin.png"
-          class="w-full"
+          class="w-full rounded-xl"
           alt="A composting bin"
         />
         <h1
@@ -230,11 +230,18 @@
             class="flex flex-col items-center justify-center w-32 h-32 m-2 text-center bg-gray-100 rounded-lg shadow-md hover:bg-gray-200"
           >
             <img
-              src="../assets/img/home-composting-bin.png"
-              class="w-24 h-24"
-              alt="item.name"
+              v-if="item.image_url"
+              :src="item.image_url"
+              class="w-full rounded-xl"
+              :alt="item.name"
             />
-            <span class="mt-2 text-sm text-gray-500 dark:text-gray-700">{{
+            <img
+              v-else
+              src="../assets/img/home-composting-bin.png"
+              class="w-full rounded-xl"
+              alt="A composting bin"
+            />
+            <span class="mt-2 text-md text-gray-500 dark:text-gray-700">{{
               item.name
             }}</span>
           </NuxtLink>
