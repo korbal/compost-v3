@@ -174,7 +174,7 @@
 
     <!-- DESCRIPTION ...-->
     <!-- splitting sentences into paragraphs for better reading -->
-    <p v-for="sentence in sentences">{{ sentence }}</p>
+    <div v-html="description"></div>
     <!-- DESCRIPTION END-->
 
     <!-- Category and reference block -->
@@ -272,10 +272,7 @@ const myObj = myArray.find((myObj) => myObj.path === item);
 
 // DESCRIPTION FORMATTING
 // splitting sentences into paragraphs for better reading. adding a "." at the end of each sentence to make it a proper sentence. " remove the last "." from the last sentence.
-const sentences = myObj.description
-  .split(".")
-  .map((sentence) => sentence + ".");
-sentences[sentences.length - 1] = sentences[sentences.length - 1].slice(0, -1);
+const description = myObj.description;
 
 // pick 3 random items from myArray and put them in an object. use this object to generate the links to the other items. use only the path and name properties.
 
