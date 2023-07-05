@@ -87,7 +87,7 @@
 
     <section class="">
       <!-- graphs  -->
-      <div class="flex justify-center">
+      <div class="flex justify-around">
         <div
           class="w-48 h-24 bg-gray-500 rounded-lg mr-2 relative flex items-center justify-center"
         >

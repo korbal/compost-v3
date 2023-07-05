@@ -3,7 +3,7 @@
     <Navbar />
 
     <!-- output page component -->
-    <div class="container mx-auto px-10 py-4 max-w-xl">
+    <div class="container mx-auto px-10 py-4 max-w-3xl">
       <slot />
     </div>
 
