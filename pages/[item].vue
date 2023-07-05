@@ -175,9 +175,12 @@
     <!-- DESCRIPTION ...-->
     <!-- splitting sentences into paragraphs for better reading -->
 
-    <div v-if="myObj.reference"></div>
-
-    <p v-for="sentence in sentences">{{ sentence }}</p>
+    <div v-if="myObj.reference">
+      <div v-html="description"></div>
+    </div>
+    <div v-else>
+      <p v-for="sentence in sentences">{{ sentence }}</p>
+    </div>
 
     <!-- DESCRIPTION END-->
 
@@ -280,6 +283,8 @@ const sentences = myObj.description
   .split(".")
   .map((sentence) => sentence + ".");
 sentences[sentences.length - 1] = sentences[sentences.length - 1].slice(0, -1);
+
+const description = myObj.description;
 
 // pick 3 random items from myArray and put them in an object. use this object to generate the links to the other items. use only the path and name properties.
 
