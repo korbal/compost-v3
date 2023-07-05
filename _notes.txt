@@ -1,0 +1,2 @@
+2023-07-05
+widened screen, remodeled item page, so it pulls in html descriptions from db_cici3 eventually (db2 just one item bacon grease is html for testing this)

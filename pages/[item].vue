@@ -174,7 +174,11 @@
 
     <!-- DESCRIPTION ...-->
     <!-- splitting sentences into paragraphs for better reading -->
+
+    <div v-if="myObj.reference"></div>
+
     <p v-for="sentence in sentences">{{ sentence }}</p>
+
     <!-- DESCRIPTION END-->
 
     <!-- Category and reference block -->
