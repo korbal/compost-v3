@@ -175,12 +175,7 @@
     <!-- DESCRIPTION ...-->
     <!-- splitting sentences into paragraphs for better reading -->
 
-    <div v-if="myObj.reference">
-      <div v-html="description"></div>
-    </div>
-    <div v-else>
-      <p v-for="sentence in sentences">{{ sentence }}</p>
-    </div>
+    <p v-for="sentence in sentences">{{ sentence }}</p>
 
     <!-- DESCRIPTION END-->
 
