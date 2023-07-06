@@ -89,7 +89,7 @@
       <!-- graphs  -->
       <div class="flex justify-around">
         <div
-          class="w-48 h-24 bg-gray-500 rounded-lg mr-2 relative flex items-center justify-center"
+          class="w-72 h-24 bg-gray-500 rounded-lg mr-2 relative flex items-center justify-center"
         >
           <span class="text-white text-xl text-center mt-8">{{
             myObj.category
@@ -107,7 +107,7 @@
         </div>
 
         <div
-          class="w-48 h-24 bg-blue-500 rounded-lg mr-2 relative flex items-center justify-center"
+          class="w-72 h-24 bg-blue-500 rounded-lg mr-2 relative flex items-center justify-center"
         >
           <span class="text-white text-xl text-center mt-8">{{
             myObj.decomposition_time
@@ -124,7 +124,7 @@
           >
         </div>
         <div
-          class="w-48 h-24 bg-purple-500 rounded-lg relative flex items-center justify-center"
+          class="w-72 h-24 bg-purple-500 rounded-lg relative flex items-center justify-center"
         >
           <span class="text-white text-xl text-center mt-8">{{
             myObj.cn_ratio
@@ -173,8 +173,14 @@
     <br />
 
     <!-- DESCRIPTION ...-->
-    <!-- splitting sentences into paragraphs for better reading -->
-    <div v-html="description"></div>
+
+    <div v-if="myObj.format">
+      <div v-html="description"></div>
+    </div>
+    <div v-else>
+      <p v-for="sentence in sentences">{{ sentence }}</p>
+    </div>
+
     <!-- DESCRIPTION END-->
 
     <!-- Category and reference block -->
@@ -251,7 +257,7 @@ let items = [];
 const { item } = useRoute().params;
 const { data } = await useAsyncData("items", () =>
   $fetch(
-    "https://script.google.com/macros/s/AKfycbylLKlTRlulUb0x9r9j2Wvxa5W64g49NOT9kOsXR-N6LiPRamqA/exec"
+    "https://script.google.com/macros/s/AKfycbylLKlTRlulUb0x9r9j2Wvxa5W64g49NOT9kOsXR-N6LiPRamqA/exec?sheet=db_cici3"
   )
 );
 
@@ -270,8 +276,16 @@ const myArray = itemz.items;
 
 const myObj = myArray.find((myObj) => myObj.path === item);
 
-// DESCRIPTION FORMATTING
+// DESCRIPTION FORMATTING: if it's html, use description, if format cell empty, use sentences.
+
+//TODO: temporary, if all descriptions are formatted html, you can remove this.
 // splitting sentences into paragraphs for better reading. adding a "." at the end of each sentence to make it a proper sentence. " remove the last "." from the last sentence.
+
+const sentences = myObj.description
+  .split(".")
+  .map((sentence) => sentence + ".");
+sentences[sentences.length - 1] = sentences[sentences.length - 1].slice(0, -1);
+
 const description = myObj.description;
 
 // pick 3 random items from myArray and put them in an object. use this object to generate the links to the other items. use only the path and name properties.
