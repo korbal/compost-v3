@@ -5,13 +5,36 @@
 body {
   @apply bg-gray-50;
 }
+h2 {
+  font-size: xx-large;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-size: x-large;
+}
+
+p {
+  margin-top: -10px;
+  font-size: large;
+}
+
+ol {
+  list-style-type: disc;
+  font-size: large;
+  margin-bottom: 30px;
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 10px;
+}
 
 @layer components {
   .btn {
-    @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-white ;
+    @apply bg-[#12b488] text-white px-3 py-2 rounded-md text-white;
   }
   .card {
     @apply p-3 rounded-md bg-white shadow-md h-full;
   }
-
 }
