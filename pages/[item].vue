@@ -307,24 +307,12 @@ definePageMeta({
 
 useHead({
   script: [
-    // convertkit javascript
-
-    {
-      async: true,
-      src: "https://ot-ev-ot-nyelv.ck.page/0a0a04ec56/index.js",
-      "data-uid": "0a0a04ec56",
-    },
     //sharethis.com javascript
     {
       type: "text/javascript",
       src: "https://platform-api.sharethis.com/js/sharethis.js#property=6391f7a98fb8b6001abbbcce&product=sop",
       async: "async",
     },
-    // addthis.com javascript
-    // {
-    //   'type': 'text/javascript',
-    //   'src': '//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6396f97748f3bf89',
-    // }
   ],
 });
 </script>

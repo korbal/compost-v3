@@ -7,16 +7,19 @@ body {
 }
 h2 {
   font-size: xx-large;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 h3 {
   font-size: x-large;
+  margin-bottom: 1rem;
 }
 
 p {
   margin-top: -10px;
-  font-size: large;
+  margin-bottom: 1rem;
+  font-size: 20px;
 }
 
 ol {
@@ -28,6 +31,29 @@ ol {
 
 li {
   margin-bottom: 10px;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+a:active {
+  color: red;
+}
+
+a:visited {
+  color: red;
+  text-decoration: underline;
+}
+
+.dotted-underline {
+  border-bottom: 1px dotted #333;
 }
 
 @layer components {
