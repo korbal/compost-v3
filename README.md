@@ -1,4 +1,4 @@
-# canicompostit.com 
+#canicompostit.com 
 A web app that is a searchable database of home compostable items. Already up to 1500 unique visitors a month. 
 [canicompostit.com](https://canicompostit.com)
 
@@ -47,4 +47,4 @@ Locally preview production build:
 npm run preview
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information...
+Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
