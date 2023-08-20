@@ -5,8 +5,15 @@
 body {
   @apply bg-gray-50;
 }
-h2 {
+
+h1 {
   font-size: xx-large;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: x-large;
   margin-bottom: 20px;
   font-weight: bold;
 }
