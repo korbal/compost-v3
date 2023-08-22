@@ -40,27 +40,27 @@ li {
   margin-bottom: 10px;
 }
 
-a {
+.dotted-underline {
+  border-bottom: 1px dotted #333;
+}
+
+p a {
   color: blue;
   text-decoration: underline;
 }
 
-a:hover {
+p a:hover {
   color: purple;
   text-decoration: underline;
 }
 
-a:active {
+p a:active {
   color: red;
 }
 
-a:visited {
+p a:visited {
   color: red;
   text-decoration: underline;
-}
-
-.dotted-underline {
-  border-bottom: 1px dotted #333;
 }
 
 @layer components {
