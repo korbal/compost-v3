@@ -69,8 +69,8 @@ export default defineNuxtConfig({
         {
           async: true,
           defer: true,
-          src: "https://umami-anal.vercel.app/umami.js",
-          "data-website-id": "d1e55294-4c20-4484-ab89-ce956b15b3b7",
+          src: "https://umami-anal.vercel.app/script.js",
+          "data-website-id": "d96c24e2-7dfb-409a-a87d-64b901c823dd",
         },
       ],
 
