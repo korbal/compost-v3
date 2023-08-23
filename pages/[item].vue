@@ -76,7 +76,7 @@
       </h3>
 
       <h3 v-else class="text-xl text-center">
-        You probably shouldn't put
+        It's complicated, whether you can put
         <span class="italic">{{ myObj.name }}</span> into your composting bin,
         so read on!
       </h3>
