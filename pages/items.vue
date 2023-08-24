@@ -73,7 +73,7 @@
 <script setup>
 //get json and destructure it into data AND rename it into items, so items can be used in the template...
 const { data: items } = await useFetch(
-  "https://script.google.com/macros/s/AKfycbylLKlTRlulUb0x9r9j2Wvxa5W64g49NOT9kOsXR-N6LiPRamqA/exec?sheet=db_cici3"
+  "https://script.google.com/macros/s/AKfycbylLKlTRlulUb0x9r9j2Wvxa5W64g49NOT9kOsXR-N6LiPRamqA/exec?api_key=5eggFasz"
 );
 console.log(items);
 </script>
