@@ -1,2 +1,4 @@
+2023-08-24
+apikey branch: I added runtimeConfig to nuxt.config so that I can use env variables, but it doesn't fucking work. if I click around, throws fuck knows errors. I can just concatenate the api key to the request url but then I Can't sync it up to github. fucking fucknuxt. why is it so fucking hard to use env? 
 2023-07-05
 widened screen, remodeled item page, so it pulls in html descriptions from db_cici3 eventually (db2 just one item bacon grease is html for testing this)

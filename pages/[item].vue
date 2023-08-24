@@ -254,11 +254,17 @@
 </template>
 
 <script setup>
+const runtimeConfig = useRuntimeConfig();
+console.log(runtimeConfig);
 let items = [];
 const { item } = useRoute().params;
 const { data } = await useAsyncData("items", () =>
   $fetch(
-    "https://script.google.com/macros/s/AKfycbylLKlTRlulUb0x9r9j2Wvxa5W64g49NOT9kOsXR-N6LiPRamqA/exec?sheet=db_cici3"
+    "https://script.google.com/macros/s/AKfycbylLKlTRlulUb0x9r9j2Wvxa5W64g49NOT9kOsXR-N6LiPRamqA/exec?sheet=db_cici3&api_key=" +
+      runtimeConfig.apiSecret
+
+    // publicRuntimeConfig.gsheetApiKey
+    // process.env.GHSEET_API_KEY
   )
 );
 
