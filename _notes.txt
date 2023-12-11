@@ -1,2 +1,4 @@
+2023-12-11
+removed _headers file for netlify caching because of the fucking SSR and not ssg.
 2023-07-05
 widened screen, remodeled item page, so it pulls in html descriptions from db_cici3 eventually (db2 just one item bacon grease is html for testing this)

@@ -212,42 +212,6 @@
     <Search />
     <!-- Category and reference block end -->
 
-    <section>
-      <!-- Related items' links -->
-
-      <!-- use the randomItemsObj and generate an unordered list with nuxtlinks. to='path' -->
-      <div class="text-center font-bold text-xl mb-4 mt-4">Other items</div>
-      <ul class="flex flex-wrap justify-center mt-3 px-3">
-        <li
-          v-for="item in randomItemsObj"
-          :key="item.id"
-          class="flex flex-col items-center justify-center w-1/2 sm:w-1/3"
-        >
-          <NuxtLink
-            :to="'/' + `${item.path}` + '/'"
-            class="flex flex-col items-center justify-center w-32 h-32 m-2 text-center bg-gray-100 rounded-lg shadow-md hover:bg-gray-200"
-          >
-            <img
-              v-if="item.image_url"
-              :src="item.image_url"
-              class="w-full rounded-xl"
-              :alt="item.name"
-            />
-            <img
-              v-else
-              src="../assets/img/home-composting-bin.png"
-              class="w-full rounded-xl"
-              alt="A composting bin"
-            />
-            <span class="mt-2 text-md text-gray-500 dark:text-gray-700">{{
-              item.name
-            }}</span>
-          </NuxtLink>
-        </li>
-      </ul>
-    </section>
-    <!-- Related items end -->
-
     <!-- sharethis.com inline geci -->
     <div class="sharethis-inline-share-buttons"></div>
   </div>
