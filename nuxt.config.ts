@@ -1,7 +1,7 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config ---
 export default defineNuxtConfig({
-  target: "static",
-  ssr: true,
+  // target: "static",
+  ssr: false,
 
   modules: ["@nuxtjs/tailwindcss", "@nuxt/image"],
   //experimental.payloadExtraction = false
