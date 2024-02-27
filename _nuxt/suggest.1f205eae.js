@@ -1,0 +1,1 @@
+import{c as t,o as e,e as a}from"./entry.21c95ac4.js";const s={class:"max-w-md mx-auto"},r=a("iframe",{src:"https://tally.so/r/wLZgzl?transparentBackground=1&dynamicHeight=1",width:"450px",height:"550px",frameborder:"50",marginheight:"0",marginwidth:"0",title:"Suggest an item! "},null,-1),o=[r],_={__name:"suggest",setup(n){return(c,i)=>(e(),t("div",s,o))}};export{_ as default};

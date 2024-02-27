@@ -1,0 +1,1 @@
+import{_ as n,a}from"./Footer.ec7dfaf4.js";import{_ as c,c as s,b as e,e as r,Q as d,o as l}from"./entry.21c95ac4.js";import"./nuxt-link.cd2d2617.js";const u={};function p(o,f){const t=n,_=a;return l(),s("div",null,[e(t),r("div",null,[d(o.$slots,"default",{},void 0,!0)]),e(_)])}const x=c(u,[["render",p],["__scopeId","data-v-e657b805"]]);export{x as default};
